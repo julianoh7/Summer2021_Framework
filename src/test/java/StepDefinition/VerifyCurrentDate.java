@@ -26,12 +26,8 @@ public class VerifyCurrentDate extends Web {
     public void scrollDownPage() {
         webCommands.scrollDown();
     }
-    @And("I find time-machine")
-    public void findingElement(){
-        homepage.locatingTimeMachine();
 
-    }
-    @And("I click")
+    @And("I click on time-machine")
     public void clickingElement(){
         homepage.clickTimeMachine();
     }
