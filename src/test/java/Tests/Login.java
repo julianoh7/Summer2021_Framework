@@ -1,7 +1,9 @@
 package Tests;
 
 import DriverWrapper.Web;
+import Facebook.ErrorPage;
 import Facebook.Homepage;
+import Pages.WebCommands;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -12,20 +14,27 @@ public class Login extends Web{
     2. Verify login button is enabled
     3.quit webpage
      */
-
     Homepage homepage = new Homepage();
 
+
     @Test
-    public void isLoginButtonEnabled(){
+    public void isLoginButtonEnabledOrNot(){
         openWebpage();
-        Assert.assertTrue(homepage.isLogginButtonEnabled(),"Loggin button is not enabled");
+
+
         quitWebpage();
 
-
-
-
+    }
+    @Test
+    public void invalidCredentials() throws InterruptedException {
+        openWebpage();
+        homepage.typeLoginEmail("abcd@gmail.com");
+        homepage.typeLoginPwd("abc@1234");
+        homepage.clickLoginButton();
+        ErrorPage errorPage = new ErrorPage();
+        Assert.assertTrue(errorPage.isSomethingWrongErrorDisplayed(),"Error message not displayed");
+        quitWebpage();
 
     }
-
 
 }
