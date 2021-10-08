@@ -29,6 +29,17 @@ public class Web {
             e.printStackTrace();
         }
     }
+    public void openClassRoomEssentialsOnlineWebpage() {
+        System.setProperty("webdriver.chrome.driver", "Drivers/chromedriver");
+        driver = new ChromeDriver();
+        driver.get("https://classroomessentialsonline.com/");
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+    }
+
 
 
 
