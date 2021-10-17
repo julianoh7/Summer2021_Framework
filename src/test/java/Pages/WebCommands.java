@@ -32,6 +32,8 @@ public class WebCommands {
     public void getTextMethod(By locator) {
         getWebElement(locator).getText();
     }
+    // METHOD FROM AHSAN : public String getTextMethod(By locator) {
+       // return getWebElement(locator).getText();
 //    public void getTodayTemp (By locator){
 //        getWebElement(locator).getText();
 //    }
