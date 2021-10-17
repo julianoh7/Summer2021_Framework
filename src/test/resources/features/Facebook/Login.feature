@@ -1,7 +1,7 @@
 Feature: Login
   #Verify login button is enabled after launching web-page
 
-
+  @sanity
   Scenario: Verify login button is enabled by default
     Given  I am on Homepage
     Then I verify login button is enabled
