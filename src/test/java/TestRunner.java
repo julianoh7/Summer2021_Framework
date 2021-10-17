@@ -13,7 +13,7 @@ import org.junit.runner.RunWith;
         // Tags to be executed
         tags = {"@sanity"},
 
-        // This creates a default cucumber report
+        // This creates a default cucumber report for
         plugin = {"pretty", "html:Reports/Default/"}
 )
 
