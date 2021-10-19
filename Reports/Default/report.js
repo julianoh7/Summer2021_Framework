@@ -44,22 +44,3 @@ formatter.step({
 formatter.match({
   "location": "LoginSD.launchWebpage()"
 });
-formatter.result({
-  "duration": 10900662715,
-  "status": "passed"
-});
-formatter.match({
-  "location": "LoginSD.isLoginEnabled()"
-});
-formatter.result({
-  "duration": 28649031,
-  "status": "passed"
-});
-formatter.match({
-  "location": "LoginSD.quitPage()"
-});
-formatter.result({
-  "duration": 145505383,
-  "status": "passed"
-});
-});
